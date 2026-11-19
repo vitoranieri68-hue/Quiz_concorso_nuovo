@@ -132,7 +132,12 @@
     }
     const startBtn = $('start-button');
     if (startBtn) {
-      startBtn.textContent = state.isExam ? 'Avvia Simulazione Esame' : 'Avvia Allenamento';
+      const planned = state.count === 'all' ? pool.length : Math.min(Number(state.count), pool.length);
+      startBtn.disabled = pool.length === 0;
+      const baseLabel = state.isExam ? 'Avvia Simulazione Esame' : 'Avvia Allenamento';
+      startBtn.textContent = pool.length > 0
+        ? `${baseLabel} (${planned} ${planned === 1 ? 'domanda' : 'domande'})`
+        : baseLabel;
     }
   }
 
@@ -415,6 +420,10 @@
     if (!btn) return;
     state.subject = btn.dataset.subject;
     setSelection('subject-options', 'subject', state.subject);
+    if (state.subject !== 'all') {
+      state.count = 'all';
+      setSelection('count-options', 'count', 'all');
+    }
     updatePoolUI();
   });
 

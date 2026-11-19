@@ -42,8 +42,8 @@ def main(source, destination):
     duplicates = [key for key, count in Counter(ids).items() if count > 1]
     if duplicates:
         raise ValueError(f"ID duplicati: {duplicates}")
-    if len(questions) != 180:
-        raise ValueError(f"Attesi 180 quesiti, trovati {len(questions)}")
+    if len(questions) != 167:
+        raise ValueError(f"Attesi 167 quesiti, trovati {len(questions)}")
     payload = json.dumps(questions, ensure_ascii=False, separators=(",", ":"))
     Path(destination).write_text(
         "/* Generato dal file Excel sorgente. Non modificare manualmente. */\n"

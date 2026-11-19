@@ -1,6 +1,6 @@
-const CACHE = 'quiz-progressioni-2026-v8';
+const CACHE = 'quiz-progressioni-2026-v8.1';
 const ASSETS = [
-  './', './index.html', './styles.css?v=8', './app.js?v=8', './questions.js?v=8',
+  './', './index.html', './styles.css?v=8.1', './app.js?v=8.1', './questions.js?v=8.1',
   './manifest.webmanifest', './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png'
 ];
 self.addEventListener('install', (event) => {

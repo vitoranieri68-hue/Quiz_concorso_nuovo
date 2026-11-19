@@ -1,11 +1,11 @@
-# Quiz Progressioni 2026 — v1.0.0
+# Quiz Progressioni 2026 — v8.1
 
-Web app responsive/PWA statica per esercitarsi sui 180 quesiti della banca dati Excel `dog_progressioni_aree_26giu2026_banca_dati.xlsx`.
+Web app responsive/PWA statica per esercitarsi sui 167 quesiti della banca dati Excel `dog_progressioni_aree_26giu2026_banca_dati.xlsx`.
 
 ## Funzioni incluse
 
 - quattro materie e opzione **Tutte le materie**;
-- sessioni da 10, 20 o 30 domande;
+- sessioni da 10, 20, 30 o tutte le domande della materia scelta;
 - estrazione casuale senza ripetizioni nella sessione;
 - risposte A/B/C mescolate a ogni sessione;
 - correzione immediata;
@@ -65,7 +65,7 @@ Lo script controlla intestazioni, campi mancanti, ID duplicati e risposte duplic
 - `index.html` — interfaccia;
 - `styles.css` — design responsive;
 - `app.js` — logica del quiz e salvataggio locale;
-- `questions.js` — 180 quesiti incorporati;
+- `questions.js` — 167 quesiti incorporati;
 - `manifest.webmanifest`, `sw.js`, `icons/` — componenti PWA/offline;
 - `source-info.json` — tracciabilità della sorgente;
 - `tools/build_questions.py` — rigenerazione della banca dati incorporata.
