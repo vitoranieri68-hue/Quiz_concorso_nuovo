@@ -162,3 +162,11 @@ p { margin: 0; }
 
 .answer-btn.selected-neutral { border-color: var(--primary); background: #f0fdfa; }
 .answer-btn.selected-neutral .answer-letter { background: var(--primary); color: white; }
+
+/* Responsive support for 4-option segmented control */
+@media (max-width: 540px) {
+  .segmented-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

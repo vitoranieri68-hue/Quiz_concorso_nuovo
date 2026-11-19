@@ -1,13 +1,27 @@
 {
-  "appVersion": "1.0.0",
+  "appVersion": "8.0.0",
   "sourceFile": "dog_progressioni_aree_26giu2026_banca_dati.xlsx",
-  "sourceSha256": "fa1268849b803e4eeb3439ea11722c46f26e5d4bcecdd9873ac21571d2a8d384",
-  "questionCount": 180,
+  "questionCount": 167,
+  "removedIds": [
+    9,
+    17,
+    18,
+    26,
+    29,
+    30,
+    45,
+    59,
+    60,
+    86,
+    115,
+    142,
+    146
+  ],
   "subjectCounts": {
-    "criminal": 30,
-    "civil": 30,
-    "registry": 90,
+    "criminal": 24,
+    "civil": 27,
+    "registry": 86,
     "administrative": 30
   },
-  "generatedOn": "2026-11-11"
+  "updatedOn": "2026-11-19"
 }
